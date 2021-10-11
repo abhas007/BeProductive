@@ -1,0 +1,128 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f2f2f2;
+    color:#2b6777;
+}
+
+.container{
+    padding: 15px 10px;
+    height: 200px;
+    width: 40vw;
+    border: dashed 4px #2b6777;
+    border-radius: 5%;
+    background-color: #a0d1c6;
+    padding: 7px;
+    margin: 5vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow:scroll;
+    justify-content: start;
+}
+
+.container:hover{
+    border: solid 4px #2b6777;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    padding: 40px 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    color:#2b6777;
+    font-size: 30px;
+    transition: 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+h1:hover{
+    color:white;    
+}
+
+.btn{
+  background-color: #c8d8e4;
+  border: solid 3px white;
+  color: #2b6777;
+  font-weight: bold;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.btn:hover {
+    font-weight: bold;
+    background-color: white;
+    border: solid 3px #2b6777;
+    color: #2b6777;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
+                0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#timerC{
+    float: left;
+}
+
+#alarmC{
+    float:right;
+}
+
+#blacklistC{
+    float: left;
+}
+
+#todoC{
+    float:right;
+}
+
+.slider{
+    position: relative;
+    top:0;
+    right:-120%;
+    color:#fff;
+    transition:0.5s ease;
+}
+
+.container:hover .slider{
+    right:0px;
+}
+
+input{
+    border: 2px solid #2b6777;
+    margin-bottom: 3px;
+}
+
+.img{
+    position: inherit;
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+
+.checkmark{
+    border: 2px solid black;
+    background-color: #eee;
+    height: 15px;
+    width: 15px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header">
+    <b><header> Productivity Manager</header></b>
+  </div>
+
+
+
+  <!-- Timer ---------------------------------------------------->
+  <div class="container" id="timerC">
+    <div class="tn">
+      <h1>TIMER</h1>
+        <h1><p id="countdown"></p></h1>
+    </div>
+    <div class="slider">
+      <input type="number" placeholder="Enter in Minutes" id="time"><br>
+      <button class="btn" type="button" id="timerButton">Start Timer</button>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Alarm --------------------------------------------------->
+  <div class="container" id="alarmC">
+    <div class="tn">
+      <h1>ALARM</h1>
+    </div>
+    <div class="noslider">
+      <input type="datetime-local" id="alarmTime">
+      <br>
+      <small>Enter the time to set an alarm!</small>
+      <br>
+      <input type="text" id="alarmName" placeholder="Alarm Name">
+      <br>
+      <button class="btn" id="alarmButton" type="button">Set Alarm</button>
+    </div>
+
+    <!-- <div id="alarmOptions" style="display: none;">
+      <button id="snooze" type="button">Snooze 5 minutes</button>
+      <button id="stopAlarm" type="button">Stop Alarm</button>
+    </div> -->
+  </div>
+
+
+
+
+
+  <!-- BlackList ---------------------------------------------->
+  <div id="blacklistC" class="container">
+    <h1>Websites to BlackList</h1>
+    <!-- <button id="webtext" type="button"> Block + add website<br></button>
+    <div id="webplace"></div> -->
+    
+    <input type="text" id="site" placeholder="Sites without www or com"><br>
+    <div id="btns">
+      <button class="btn" type="button" id="block"> Block</button>
+      <button class="btn" type="button" id="unblock"> UnBlockAll</button>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- To Do -------------------------------------------------->
+  <div id="todoC" class="container">
+    <h1> To Do List</h1>
+    <button class="btn" type="button" id="todoButton">Add a task<br></button><br>
+    <div id="listplace"></div>
+  </div>
+  
+</body>
+<script src="main.js">
+
+</script>
+</html>
